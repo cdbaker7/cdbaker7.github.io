@@ -165,7 +165,7 @@ export default function Home() {
             <HoverCard className="h-full">
               <h3 className="text-gray-100 dark:text-gray-900 text-lg font-semibold mb-2">Research</h3>
               <p className="text-gray-300 dark:text-gray-600">
-                I am a research assistant at Brown University, where I work on computational chemistry, from electronic structure theory to protein structure prediction.
+                I research protein-ligand poses at D. E. Shaw Research using statistical methods. Previously, I worked in computational chemistry at Brown University, from electronic structure theory to protein structure prediction.
                 I am passionate about using chemical principles to guide my understanding of biological phenomena, particularly through statistical methods.
               </p>
             </HoverCard>
@@ -173,7 +173,7 @@ export default function Home() {
             <HoverCard className="h-full">
               <h3 className="text-gray-100 dark:text-gray-900 text-lg font-semibold mb-2">Teaching</h3>
               <p className="text-gray-300 dark:text-gray-600">
-                I am a head teaching assistant for CSCI 2840: Advanced Algorithms in Computational Biology and Medical Bioinformatics at Brown University.
+                I most recently served as a head teaching assistant for CSCI 2840: Advanced Algorithms in Computational Biology and Medical Bioinformatics at Brown University.
                 I have previously worked on a range of other courses, including introductory computational biology and theoretical cryptography and computer security.
               </p>
             </HoverCard>
@@ -181,8 +181,8 @@ export default function Home() {
             <HoverCard className="h-full">
               <h3 className="text-gray-100 dark:text-gray-900 text-lg font-semibold mb-2">Education</h3>
               <p className="text-gray-300 dark:text-gray-600">
-                I am currently in my final semester at Brown University, where I am majoring in Computer Science with a focus on biology and chemistry.
-                I am grateful to have taken a variety of unique courses at Brown, ranging from graduate machine learning to atomistic reaction engineering.
+                I recently graduated from Brown University, where I concentrated in Computer Science with a focus on biology and chemistry.
+                I am grateful to have taken a variety of unique courses at Brown, ranging from graduate machine learning to atomistic reaction engineering and probabilities in quantum mechanics.
               </p>
             </HoverCard>
           </div>

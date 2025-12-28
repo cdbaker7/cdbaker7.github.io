@@ -24,17 +24,6 @@ const experiences: Experience[] = [
     type: "work"
   },
   {
-    title: "Research Assistant",
-    organization: "Singh Lab",
-    period: "06/2023 - Present",
-    description: [
-      "Formulated a relaxed variation of Augmented Gromov-Wasserstein (AGW) distance, a convex combination of Gromov-Wasserstein and Co-Optimal Transport distance, for single-cell multi-omic alignment.",
-      "Developed an open source optimization package using pytorch for computing optimal transport coupling matrices up to and including relaxed AGW.",
-      "Presented a poster at the 2024 iteration of Research in Computational Molecular Biology (RECOMB) and working towards a paper submission."
-    ],
-    type: "research"
-  },
-  {
     title: "Undergraduate Teaching Assistant",
     organization: "Computational Molecular Biology",
     period: "09/2023 - 12/2023",
@@ -56,28 +45,6 @@ const experiences: Experience[] = [
     type: "education"
   },
   {
-    title: "Research Assistant",
-    organization: "Peterson Lab",
-    period: "01/2024 - Present",
-    description: [
-      "Helped develop a method to solve the generalized Poisson equation primarily on a planewave basis.",
-      "Implemented our new algorithm in the grid-based projector-augmented waves (GPAW) framework for use in implicit solvation electrostatic calculations.",
-      "Working on generalizing our method to handle arbitrary boundary conditions on a mixed sine and plane wave basis."
-    ],
-    type: "research"
-  },
-  {
-    title: "Research Assistant",
-    organization: "Istrail Lab",
-    period: "04/2024 - Present",
-    description: [
-      "Working on a method to compute contextualized hydrophobicity given a protein structure, with an adjacent statistical framework for evaluating fold likelihood.",
-      "Generalizing combinatoric protein folding algorithms to handle real-valued hydrophobicities.",
-      "Integrating both the statistical framework and lattice protein folding algorithms to improve the physical context of more modern deep learning methods for protein structure prediction, culminating in an honors thesis."
-    ],
-    type: "research"
-  },
-  {
     title: "Analyst Intern",
     organization: "Charles River Associates",
     period: "06/2024 - 08/2024",
@@ -92,7 +59,7 @@ const experiences: Experience[] = [
     organization: "Introduction to Cryptography and Computer Security",
     period: "09/2024 - 12/2024",
     description: [
-      "Held office hours, going through complex reductions with students of a variety of cryptography backgrounds.",
+      "Held office hours, going through reductions with students of a variety of cryptography backgrounds.",
       "Worked with two other teaching assistants to coordinate assignments and grading.",
       "Wrote over 160 pages of solutions to all of the course content to help students understand the material better. Included both shorter and more detailed answers to ensure readibility."
     ],
@@ -101,24 +68,59 @@ const experiences: Experience[] = [
   {
     title: "Head Teaching Assistant",
     organization: "Advanced Algorithms in Computational Biology and Medical Bioinformatics",
-    period: "01/2025 - Present",
+    period: "01/2025 - 05/2025",
     description: [
       "Holding office hours and writing both conceptual and programming homework questions.",
-      "Piloting a new type of assignment that requires students to present a paper on a topic in a new area of the course every three weeks.",
-      "Presenting two lectures on protein folding while the professor is away in February with one of my research collaborators and fellow teaching assistants."
+      "Presented two lectures on protein folding while the professor is away in February with one of my fellow teaching assistants."
     ],
     type: "education"
   },
   {
-    title: "Incoming Scientific Associate",
-    organization: "D. E. Shaw Research",
-    period: "12/2025 - Present",
+    title: "Research Assistant",
+    organization: "Singh Lab",
+    period: "06/2023 - 05/2025",
     description: [
-      "After graduating from Brown in May, I'll be heading off to DESRES to work on probabilistic methods in protein-ligand binding!",
+      "Formulated a relaxed variation of Augmented Gromov-Wasserstein (AGW) distance, a convex combination of Gromov-Wasserstein and Co-Optimal Transport distance, for single-cell multi-omic alignment.",
+      "Developed an open source optimization package using pytorch for computing optimal transport coupling matrices up to and including relaxed AGW.",
+      "Presented a poster at the 2024 iteration of Research in Computational Molecular Biology (RECOMB).",
+      "Published a paper in Bioinformatics Advances."
+    ],
+    type: "research"
+  },
+  {
+    title: "Research Assistant",
+    organization: "Peterson Lab",
+    period: "01/2024 - 05/2025",
+    description: [
+      "Helped develop a method to solve the generalized Poisson equation primarily on a planewave basis.",
+      "Implemented our new algorithm in the grid-based projector-augmented waves (GPAW) framework for use in implicit solvation electrostatic calculations.",
+      "Working on generalizing our method to handle arbitrary boundary conditions on a mixed sine and planewave basis."
+    ],
+    type: "research"
+  },
+  {
+    title: "Research Assistant",
+    organization: "Istrail Lab",
+    period: "04/2024 - 05/2025",
+    description: [
+      "Generalized combinatoric protein folding algorithms to handle real-valued hydrophobicities.",
+      "Integrated force field information into more modern deep learning methods for protein structure prediction.",
+      "Wrote an honors thesis in the spring of 2025."
+    ],
+    type: "research"
+  },
+  {
+    title: "Scientific Associate",
+    organization: "D. E. Shaw Research",
+    period: "08/2025 - Present",
+    description: [
+      "Working on FEP and other probablistic methods for evaluating protein-ligand poses.",
     ],
     type: "work"
   },
 ]
+
+experiences.reverse()
 
 const IconComponent = ({ type }: { type: Experience['type'] }) => {
   switch (type) {

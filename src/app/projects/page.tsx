@@ -19,6 +19,7 @@ const projects: Project[] = [
     description: "Research project in the Singh lab focused on formulating UAGW optimal transport and solving it numerically, for the purpose of integrating single cell data.",
     technologies: ["Python", "Pytorch"],
     githubUrl: "https://github.com/orgs/scotplus/repositories",
+    liveUrl: "https://doi.org/10.1093/bioadv/vbaf314",
   },
   {
     title: "Solving the Generalized Poisson Equation in Planewave",
