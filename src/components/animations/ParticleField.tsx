@@ -88,7 +88,7 @@ export default function ParticleField() {
       clearInterval(animationFrame)
       container.removeEventListener('mousemove', handleMouseMove)
     }
-  }, [])
+  }, [mousePosition.x, mousePosition.y])
 
   return (
     <div 

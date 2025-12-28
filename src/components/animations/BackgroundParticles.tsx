@@ -108,18 +108,6 @@ export default function BackgroundParticles({ skipAnimation = false }: Props) {
   const autoRotationStartTimeRef = useRef(Date.now());
   const [canvasReady, setCanvasReady] = useState(false);
 
-  const isInRightSide = (x: number) => {
-    const canvas = canvasRef.current;
-    if (!canvas) return false;
-    return x > canvas.width * 0.5;
-  };
-
-  const isInLeftSide = (x: number) => {
-    const canvas = canvasRef.current;
-    if (!canvas) return false;
-    return x < canvas.width * 0.5;
-  };
-
   const handleMouseDown = (e: MouseEvent) => {
     const canvas = canvasRef.current;
     if (!canvas || !canvasReady) return;
@@ -317,11 +305,11 @@ export default function BackgroundParticles({ skipAnimation = false }: Props) {
       
       return ATOM_POSITIONS.map((p, i) => {
         // First rotate around Y axis
-        let x = p.x * Math.cos(totalRotationY) - p.z * Math.sin(totalRotationY);
+        const x = p.x * Math.cos(totalRotationY) - p.z * Math.sin(totalRotationY);
         let z = p.x * Math.sin(totalRotationY) + p.z * Math.cos(totalRotationY);
         
         // Then rotate around X axis
-        let y = p.y * Math.cos(totalRotationX) - z * Math.sin(totalRotationX);
+        const y = p.y * Math.cos(totalRotationX) - z * Math.sin(totalRotationX);
         z = p.y * Math.sin(totalRotationX) + z * Math.cos(totalRotationX);
         
         return {
@@ -717,7 +705,7 @@ export default function BackgroundParticles({ skipAnimation = false }: Props) {
       window.removeEventListener('resize', updateCanvasSize);
       cancelAnimationFrame(frameRef.current);
     };
-  }, [canvasReady]);
+  }, [canvasReady, handleMouseDown, handleMouseMove]);
 
   return (
     <motion.canvas

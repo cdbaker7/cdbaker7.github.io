@@ -137,7 +137,7 @@ export default function PortraitAnimation({ mode = 'geometric' }: Props) {
         cancelAnimationFrame(animationFrame.current);
       }
     };
-  }, [imageData, mode]);
+  }, [imageData, mode, isDark]);
 
   if (isLoading) {
     return <div>Loading...</div>;

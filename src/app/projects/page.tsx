@@ -28,9 +28,10 @@ const projects: Project[] = [
     gitlabUrl: "https://gitlab.com/Cbaker37/gpaw_sjmpw",
   },
   {
-    title: "Generalizing Hydrophobicity Scales and Combinatoric Algorithms for Protein Folding",
-    description: "Research project in the Istrail lab focused on generalizing hydrophobicity scales and combinatoric algorithms for the purpose of providing physical context to the newest deep learning techniques for structure prediction.",
+    title: "Bridging Discrete and Continuous Protein Folding through Hydrophobicity and Molecular Dynamics",
+    description: "Honors thesis in the Istrail lab focused on generalizing hydrophobicity scales and combinatoric algorithms as well as providing physical context to the newest deep learning techniques for structure prediction.",
     technologies: ["Python", "OpenMM", "AlphaFold"],
+    liveUrl: "/projects/thesis.pdf",
   },
 ]
 
