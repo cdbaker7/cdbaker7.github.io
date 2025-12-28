@@ -70,7 +70,7 @@ const experiences: Experience[] = [
     organization: "Advanced Algorithms in Computational Biology and Medical Bioinformatics",
     period: "01/2025 - 05/2025",
     description: [
-      "Holding office hours and writing both conceptual and programming homework questions.",
+      "Held office hours and wrote both conceptual and programming homework questions.",
       "Presented two lectures on protein folding while the professor is away in February with one of my fellow teaching assistants."
     ],
     type: "education"
